@@ -1,98 +1,112 @@
 <!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8" />
-    <!-- Set the viewport width to device width for mobile -->
-    <meta name="viewport" content="width=device-width" />
+        <title>wjy个人博客</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>wjy个人博客</title>
+        <link rel="stylesheet" href="./theme/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="./theme/css/bootstrap-responsive.min.css" type="text/css" />
 
-    <link rel="stylesheet" href="./theme/css/normalize.css" />
-    <link rel="stylesheet" href="./theme/css/foundation.min.css" />
-    <link rel="stylesheet" href="./theme/css/style.css" />
-    <link rel="stylesheet" href="./theme/css/pygments.css" />	
-    <script src="./theme/js/custom.modernizr.js"></script>
-</head>
+        <link rel="stylesheet" href="./theme/css/main.css" type="text/css" />
+                </head>
 
-<body>
+<body id="index">
+<a class="hidden-phone" href="https://github.com/wjy127">
+<img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub" />
+</a>
+    <div class="row-fluid">
+        <div class="span10 offset1">
+            <header id="banner" >
+                <h1>
+                    <a href="./">wjy个人博客 </a>
+                </h1>
+                <nav class="navbar">
+                    <div class="navbar-inner">
+                        <ul class="nav">
+                                                                                                    <li><a href="./pages/about.html">About</a></li>
+                                                                                                                            <li ><a href="./category/life.html">Life</a></li>
+                                                    <li ><a href="./category/tech.html">Tech</a></li>
+                                                                        </ul>
 
-<!-- Nav Bar -->
-<nav>
-<div class="top-bar">
-<div class="row">
-    <div class="large-9 large-centered columns">
-	    <h1><a href=".">wjy个人博客</a></h1>
+                                            </div>
+                </nav>
+            </header><!-- /#banner -->
+        </div>
     </div>
-</div>
-</div>
 
-<!-- Show menu items and pages -->
-<div class="row">
-<div class="large-9 columns">
-    <ul class="button-group navigation">
-	
-                        <li><a href="./pages/about.html" class="button secondary small">About</a></li>
-                </ul>
-</div>
-</div>
-</nav>
-<!-- End Nav -->
-
-
-<!-- Main Page Content and Sidebar -->
-<div class="row">
-
-    <!-- Main Blog Content -->
-    <div class="large-9 columns">
-    <ul class="circle">
-	<li><a href="category/life.html">Life</a></li>
-	<li><a href="category/tech.html">Tech</a></li>
+    <div class="row-fluid">
+        <div class="span10 offset1">
+            <div class="row-fluid">
+                <div class="span10">
+                    <ul>
+    <li><a href="./category/life.html">Life</a></li>
+    <li><a href="./category/tech.html">Tech</a></li>
 </ul>
-    </div>
-    <!-- End Main Content -->
-
-    <!-- Sidebar -->
-    <aside class="large-3 columns">
-        <h5 class="sidebar-title">Site</h5>
-        <ul class="side-nav">
-            <li><a href="./archives.html">Archives</a>
-            <li><a href="./tags.html">Tags</a>
-                                </ul>
-
-        		
-        <h5 class="sidebar-title">Categories</h5>
-        <ul class="side-nav">
-                    <li><a href="./category/life.html">Life</a></li>
-                    <li><a href="./category/tech.html">Tech</a></li>
-           
-        </ul>
-        
-                <h5 class="sidebar-title">Links</h5>
-        <ul class="side-nav">
-                    <li><a href="http://getpelican.com/">Pelican</a></li>
-                    <li><a href="http://python.org/">Python.org</a></li>
-                    <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                    <li><a href="#">You can modify those links in your config file</a></li>
-                </ul>
-        		
-                <h5 class="sidebar-title">Social</h5>
-        <ul class="side-nav">
-                    <li><a href="#">You can add links in your config file</a></li>
-                    <li><a href="#">Another social link</a></li>
-                </ul>
-        
-    </aside> <!-- End Sidebar -->
-
-</div> <!-- End Main Content and Sidebar -->
-
-
-<!-- Footer -->
-<footer class="row">
-    <div class="large-12 columns">
-        <hr />
-        <div class="row">
-            <div class="large-6 columns">
-                <p>wjy个人博客 by 王璟尧</p>
+                </div>
+                <div class="span2">
+                    <section id="sidebar">
+                                                <div>
+                                <h2>Links</h2>
+                                <ul>
+                                                                    <li><a href="http://getpelican.com/">Pelican</a></li>
+                                                                    <li><a href="http://python.org/">Python.org</a></li>
+                                                                    <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                                                                    <li><a href="#">You can modify those links in your config file</a></li>
+                                                                </ul>
+                            </div><!-- /.Links -->
+                                                                    <div>
+                                <h2>Social</h2>
+                                <ul>
+                                    <li><a href="/None" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                                    
+                                                                    <li><a href="#">You can add links in your config file</a></li>
+                                                                    <li><a href="#">Another social link</a></li>
+                                                                </ul>
+                            </div><!-- /.social -->
+                                                                    <div>
+                                <h2>Tags</h2>
+                                <ul id="cloud">
+                                                                          <li class="tag-4"><a href="./tag/blog.html">blog</a></li>
+                                                                          <li class="tag-4"><a href="./tag/day.html">day</a></li>
+                                                                          <li class="tag-4"><a href="./tag/chang-shi.html">尝试</a></li>
+                                                                          <li class="tag-4"><a href="./tag/pelican.html">Pelican</a></li>
+                                                                          <li class="tag-4"><a href="./tag/make-it.html">make it</a></li>
+                                                                     </ul>
+                             </div>
+                    <!-- /.Tags -->
+                    </section><!-- /#sidebar -->
+                </div>
             </div>
-            </div>
+        </div>
     </div>
-</footer>
+
+    <footer id="site-footer">
+        <div class="row-fluid">
+            <div class="span10 offset1">
+                <address>
+                    <p>
+                        This blog is proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                    </p>
+                    <p>
+                        <a href="http://github.com/jsliang/pelican-fresh/">Fresh</a> is a responsive theme designed by <a href="http://jsliang.com/">jsliang</a>.
+                        Special thanks to <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a> and <a href="http://twitter.github.com/bootstrap">Twitter Bootstrap</a>.
+                    </p>
+                </address>
+            </div>
+        </div>
+    </footer>
+
+<script type="text/javascript">
+    var disqus_shortname = 'wjy127';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="./theme/js/bootstrap.min.js"></script>
+</body>
+</html>
