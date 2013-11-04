@@ -124,6 +124,63 @@
         <span class="p">}</span>  
     <span class="p">};</span>  
 </pre></div>
+
+
+<p>写个python自己high一high：</p>
+<div class="highlight"><pre><span class="k">def</span> <span class="nf">calculate</span><span class="p">(</span><span class="n">testcase</span><span class="p">):</span>
+
+    <span class="n">max_l</span> <span class="o">=</span> <span class="n">p_l</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="n">max_r</span> <span class="o">=</span> <span class="n">p_r</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">testcase</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+
+
+
+    <span class="n">puddle_volumes</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="n">volume</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">while</span> <span class="n">p_r</span> <span class="o">&gt;</span> <span class="n">p_l</span> <span class="p">:</span>
+
+        <span class="k">if</span> <span class="n">testcase</span><span class="p">[</span><span class="n">max_l</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">testcase</span><span class="p">[</span><span class="n">max_r</span><span class="p">]:</span>
+
+            <span class="n">p_l</span> <span class="o">=</span> <span class="n">p_l</span> <span class="o">+</span> <span class="mi">1</span>
+
+            <span class="k">if</span> <span class="n">testcase</span><span class="p">[</span><span class="n">p_l</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">testcase</span><span class="p">[</span><span class="n">max_l</span><span class="p">]:</span>
+
+                <span class="n">max_l</span> <span class="o">=</span> <span class="n">p_l</span>
+
+            <span class="k">else</span><span class="p">:</span>
+
+                <span class="n">volume</span> <span class="o">=</span> <span class="n">volume</span> <span class="o">+</span> <span class="p">(</span><span class="n">testcase</span><span class="p">[</span><span class="n">max_l</span><span class="p">]</span> <span class="o">-</span> <span class="n">testcase</span><span class="p">[</span><span class="n">p_l</span><span class="p">])</span>
+
+                <span class="k">pass</span>
+
+            <span class="k">pass</span>
+
+        <span class="k">else</span><span class="p">:</span>
+
+            <span class="n">p_r</span> <span class="o">=</span> <span class="n">p_r</span> <span class="o">-</span> <span class="mi">1</span>
+
+            <span class="k">if</span> <span class="n">testcase</span><span class="p">[</span><span class="n">p_r</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">testcase</span><span class="p">[</span><span class="n">max_r</span><span class="p">]:</span>
+
+                <span class="n">max_r</span> <span class="o">=</span> <span class="n">p_r</span>
+
+            <span class="k">else</span><span class="p">:</span>
+
+                <span class="n">volume</span> <span class="o">=</span> <span class="n">volume</span> <span class="o">+</span> <span class="p">(</span><span class="n">testcase</span><span class="p">[</span><span class="n">max_r</span><span class="p">]</span> <span class="o">-</span> <span class="n">testcase</span><span class="p">[</span><span class="n">p_r</span><span class="p">])</span>
+
+                <span class="k">pass</span>
+
+            <span class="k">pass</span>
+
+        <span class="k">pass</span>
+
+    <span class="k">pass</span>
+
+
+
+    <span class="k">return</span> <span class="n">volume</span> 
+</pre></div>
 								</article>
 								 <div id="disqus_thread" class="box"></div>
 <script type="text/javascript">
