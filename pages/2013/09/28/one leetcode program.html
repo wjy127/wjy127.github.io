@@ -81,9 +81,11 @@
 
 <span class="err">在左侧逼近过程中：</span>
 
-    <span class="err">如果一个木板的长度小于已经遍历的最大长度</span><span class="n">max</span><span class="err">，即</span><span class="n">max</span><span class="o">&gt;</span><span class="err">该木板</span><span class="o">&lt;</span><span class="n">maxIdx</span><span class="err">，所以在该木板位置能存</span><span class="n">max</span> <span class="o">-</span> <span class="err">该木板长度的水量（左右两侧各有一个木板长于它）。</span>
+    <span class="err">如果一个木板的长度小于已经遍历的最大长度</span><span class="n">max</span><span class="err">，即</span><span class="n">max</span><span class="o">&gt;</span><span class="err">该木板</span><span class="o">&lt;</span><span class="n">maxIdx</span><span class="err">，所以在该木板位置能存</span><span class="n">max</span><span class="o">:</span>
+    <span class="err">该木板长度的水量（左右两侧各有一个木板长于它）。</span>
 
-    <span class="err">如果一个木板的长度大于已经遍历的最大长度</span><span class="n">max</span><span class="err">，即</span><span class="n">max</span><span class="o">&lt;</span><span class="err">该木板</span><span class="o">&lt;</span><span class="n">maxIdx</span><span class="err">，所以在该木板位置不能存水（因为左右两侧只有一个木板（</span><span class="n">maxIdx</span><span class="err">）长于它）。更新</span><span class="n">max</span><span class="err">值。</span>
+    <span class="err">如果一个木板的长度大于已经遍历的最大长度</span><span class="n">max</span><span class="err">，即</span><span class="n">max</span><span class="o">&lt;</span><span class="err">该木板</span><span class="o">&lt;</span><span class="n">maxIdx</span><span class="err">，所以在该木板位置不能存水</span>
+    <span class="err">（因为左右两侧只有一个木板（</span><span class="n">maxIdx</span><span class="err">）长于它）。更新</span><span class="n">max</span><span class="err">值。</span>
 
 <span class="err">右侧逼近过程与左侧相似。</span>
 </pre></div>
