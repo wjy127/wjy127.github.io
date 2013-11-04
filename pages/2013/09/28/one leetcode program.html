@@ -78,17 +78,11 @@
 <blockquote>
 <p>找到最长的那块木板，假设其下标为maxIdx。</p>
 <p>分别从左侧和右侧向其逼近。</p>
-</blockquote>
-<p>在左侧逼近过程中：</p>
-<div class="highlight"><pre><span class="err">如果一个木板的长度小于已经遍历的最大长度</span><span class="n">max</span><span class="err">，即</span><span class="n">max</span><span class="o">&gt;</span><span class="err">该木板</span><span class="o">&lt;</span><span class="n">maxIdx</span><span class="err">，所以在该木板位置能存</span><span class="n">max</span><span class="o">:</span>
-<span class="err">该木板长度的水量（左右两侧各有一个木板长于它）。</span>
-
-<span class="err">如果一个木板的长度大于已经遍历的最大长度</span><span class="n">max</span><span class="err">，即</span><span class="n">max</span><span class="o">&lt;</span><span class="err">该木板</span><span class="o">&lt;</span><span class="n">maxIdx</span><span class="err">，所以在该木板位置不能存水</span>
-<span class="err">（因为左右两侧只有一个木板（</span><span class="n">maxIdx</span><span class="err">）长于它）。更新</span><span class="n">max</span><span class="err">值。</span>
-</pre></div>
-
-
+<p>在左侧逼近过程中：
+如果一个木板的长度小于已经遍历的最大长度max，即max&gt;该木板&lt;maxIdx，所以在该木板位置能存max:该木板长度的水量（左右两侧各有一个木板长于它）。</p>
+<p>如果一个木板的长度大于已经遍历的最大长度max，即max&lt;该木板&lt;maxIdx，所以在该木板位置不能存水（因为左右两侧只有一个木板（maxIdx）长于它）。更新max值。</p>
 <p>右侧逼近过程与左侧相似。</p>
+</blockquote>
 <p>下面是代码：</p>
 <div class="highlight"><pre>    <span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>  
     <span class="k">public</span><span class="o">:</span>  
@@ -213,6 +207,19 @@
 									</header>
 									<ul class="dates">
 																			<li>
+											<span class="date">10月 <strong>01</strong></span>
+											<h3><a href="pages/2013/10/01/guo-qing-kan-lao-she-de-bao-sun.html">国庆看老舍的《抱孙》</a></h3>
+											<p><p>首先，在这样一个特殊的日子里，热烈庆祝祖国建国敏感词周年！</p>
+<p>其次，闲来无事，手头上有本泛黄的书，里面有篇老舍的《抱孙》，就随手翻了翻。豆瓣上最多的评论：“这故事就像是昨天写的一样”。</p>
+<p>无责任转发：</p>
+<p>《抱孙》节选——老舍　
+　　</p>
+<p>...
+　　医生来了。一见面，王老太太就炸了烟，男大夫！男医生当收生婆？我的儿媳妇不能叫男子大汉给接生。这一阵还没炸完，又出来两个大汉，抬起儿媳妇就往床上放。老太太连耳朵都哆嗦开了！这是要造反呀，人家一个年青青的孕妇，怎么一群大汉来动手脚的？“放下，你们这儿有懂人事的没有？ </p>
+<p>要是有的话，叫几个女的来！不然，我们走！”恰巧遇上个顶和气的医生，他发了话：“放下，叫她们走吧！” </p>
+<p>王老太太咽了口凉气，咽下去砸得心中怪热的，要不是为孙子，至少得打大夫几个最响的嘴巴！现官不如现管，谁叫孙子故意闹脾气呢。抬吧，不用说废话。两个大汉刚把儿媳妇放在帆布床上，看！大夫用两只手在她肚子上这一阵按！王老太太闭上了眼 ...</p></p>
+										</li>
+																			<li>
 											<span class="date"> 9月 <strong>28</strong></span>
 											<h3><a href="pages/2013/09/28/one leetcode program.html">Trapping Rain Water-一道leetcode题</a></h3>
 											<p><p>之前在人人网上看到一篇twitter的电面题目，大家纷纷表示还是比较难的。我定睛一看，丫这不是在leetcode上出现的一道题么（虽然我承认第一次看到的时候我也没做出来～）。</p>
@@ -255,23 +262,6 @@
 <p>刚提到了CSS，我是在学习过服务端脚本以及客户端脚本之后才接触的，不过我发现这个东西比较适合安排在学习HTML之后，有了CSS,HTML就基本算学会了WEB的表现部分，可以实现页面的布局以及表现。比较早接触CSS的另一个原因是，CSS学起来比较简单，本身就是个负责控制HTML表现的表，没啥具体语法要求，这样不至于过早对学习失去兴趣。</p>
 <p>之后我建议开始接触服务端语言，PHP或者JSP等。选择一门自己适合的服务端语言。我个人比较喜欢C风格的语言，因此选择了PHP。PHP在WEB中的作用就是生成HTML代码。一个PHP程序通过处理数据逻辑，并将数据添到HTML，从而中生成我们看到的代码。这就是服务端语言的作用。至于数据库方面，由于SQL语言大同小异，选择一个使用率高又免费的db是很明智了，不用说了，非MySQL莫属。</p>
 <p>接着可以开始看javascript。Javascript有在客户端控制HTML的能力，因此适合处理一些不需要服务器参与的简单数据逻辑寻算。另外好多无刷新更新页面内容的功能也是通过Javascript控制的。因此Javascript肩负着使页面有更好的页面体验的使命。Javascript也是Ajax技术的核心，比如人人网上可以无刷新浏览照片，无刷新删除新鲜事，无刷新提交留言等 ...</p></p>
-										</li>
-																			<li>
-											<span class="date"> 8月 <strong>19</strong></span>
-											<h3><a href="pages/2013/08/19/sanguosha_3v3.html">说说三国杀3v3</a></h3>
-											<p><p>玩三国杀也有一段时间了，本科那会儿天天晚上鏊战到熄灯为止，完了还不尽心就约几个哥们一起在过道灯下摆摊面杀，乐此不疲。由于后出的一堆乱七八糟的bug人物，让我一度对身份局失去兴趣，转战3v3。三国杀的精髓就是在于平衡，其实从某种程度上来说，基本将的3v3是一个博弈性很强的玩法，主帅在选将上基本可以奠定一半的胜利。今天来谈谈一些我常用的组合。</p>
-<ul>
-<li>
-<p>吕布、马超、（孙权、黄忠等）：强攻组。用强输出对对方进行压制，尤其面对对方主帅是防御比较弱的武将（如甘宁，黄月英等），可直接秒掉。</p>
-</li>
-<li>
-<p>郭嘉、孙尚香（华陀）、孙权：回复组。香香或者华佗主帅，每回合可以砍郭嘉，让郭嘉分牌然后青囊回复，主耗，然后由另一个边锋进攻，必要时候华佗加血。</p>
-</li>
-<li>
-<p>华佗、黄盖、诸葛亮（刘备，郭嘉等给牌角色）：一波爆发组。华佗主帅则是一轮大爆发，边锋则是持续小爆发。基本上可以秒掉对方的一个前锋甚至加上主帅，爆发率很高。当然，这和选的冷方还是暖方有关系。</p>
-</li>
-<li>
-<p>华佗、刘备、（一稳定 DPS ）：无聊干耗打法 ...</p></li></ul></p>
 										</li>
 																		</ul>
 								</section>
